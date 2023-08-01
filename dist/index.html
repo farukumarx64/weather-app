@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <script src="main.js" defer></script>
+  <div class="container">
+    <div class="display">
+      <div class="logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABa0lEQVR4nO3YPUtVYQAH8JtLghFS5GLhKCJohoiTuDU0hw5SnyARxEH7AhE4ukVCU+DoC4KuDsF10UlQaLBBaGpwSOknF65wcLjnXs/bQzw/OPv/z3nea7UoiqIoKhCGsIB17GAbX/ERr2qhwhv8kO4M79FVCwEeY0Pn6hioOnwfjt3fBSaqCt+NwwzhkyWK/xPoxxyWmpP0u/zUC5sTGMYW/inWuyLCz+BSOU7zDv8aV8o1llf4HvxSvpW8CnxQjS95FdivqMB21uBPsIq/FRXYzBJ+AucVBb+1ea/9AKP4IwyHGOwk/EOcCMtvjLRbYF6YThvLeTsFjoRrOS38sxLOOFmcpRUYF77naUtn6CZbFXghfC/ThtFP4bpGb1qBz8J10DJ84mIeyi5819vUAs0Ss8KziwdtFUjcARpjLgR1PG07fKLEdMZ3nqyusYZHHYdPlOjCFD41X9z2Svi+YbHyl7ooiqIoiv53N8LESWjEooPSAAAAAElFTkSuQmCC" alt="weather logo">
+        <p>Weather.io</p>
+      </div>
+      <div class="info">
+        <h1 class="temperature">20°</h1>
+        <div class="loc-info">
+          <h2 class="city">London</h2>
+          <p class="time">06:09 - Monday, 9 Sep '19</p>
+        </div>
+        <div class="condition">
+          <div class="cond-info">
+            <img src="media/weather/64x64/day/119.png" alt="" class="cond-icon">
+            <p class="condition-text">Cloudy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <div class="search">
+        <input type="text" class="location-input" placeholder="Another Location">
+        <div class="icon search-btn">
+          <i class="ri-search-2-line"></i>
+        </div>
+      </div>
+      <div class="suggestions">
+        <p>London</p>
+        <p>Casablanca</p>
+        <p>Tokyo</p>
+        <p>Toronto</p>
+        <div class="line"></div>
+      </div>
+      <div class="weather-details">
+        <p class="title">Weather Details</p>
+        <div class="weather-info">
+          <p>Country</p>
+          <p class="country">England</p>
+        </div>
+        <div class="weather-info">
+          <p>Cloudy</p>
+          <p class="cloud">86%</p>
+        </div>
+        <div class="weather-info">
+          <p>Humidity</p>
+          <p class="humidity">62%</p>
+        </div>
+        <div class="line"></div>
+      </div>
+      <div class="weather-details">
+        <p class="title">Extra Info</p>
+        <div class="weather-info">
+          <p>Feels Like</p>
+          <p class="feels-like">22°C</p>
+        </div>
+        <div class="weather-info">
+          <p>UV</p>
+          <p class="uv-index">10 | Extreme</p>
+        </div>
+        <div class="weather-info">
+          <p>Wind</p>
+          <p class="wind">8km/h</p>
+        </div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+  <video src="media/sunny_2.mp4" autoplay loop width="100%" muted class="weather-background"></video>
+  
+</body>
+</html>

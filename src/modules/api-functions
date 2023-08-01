@@ -1,0 +1,34 @@
+import Weather from "./weather";
+
+async function fetchApi(location) {
+  try {
+    const key = 'c3c1648ec121461fb51172621232707';
+    const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${location}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    return setWeatherDetails(data);
+  } catch (error) {
+    console.log(error);
+    alert(error);
+  }
+
+}
+
+function setWeatherDetails(data) {
+  const weather = new Weather();
+  weather.setTemperature(data.current.temp_c);
+  weather.setCountry(data.location.country);
+  weather.setHumidity(data.current.humidity);
+  weather.setCloud(data.current.cloud);
+  weather.setUvIndex(data.current.uv);
+  weather.setWind(data.current.wind_kph);
+  weather.setFeelsLike(data.current.feelslike_c);
+  weather.setCondition(data.current.condition.text);
+  weather.setIcon(data.current.condition.icon);
+  weather.setName(data.location.name);
+
+  return weather;
+}
+
+export { fetchApi };
