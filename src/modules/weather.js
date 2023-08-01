@@ -1,7 +1,17 @@
 export default class Weather {
-
   //Constructor
-  constructor(temperature, country, humidity, cloud, uvIndex, wind, feelsLike, condition, icon, name) {
+  constructor(
+    temperature,
+    country,
+    humidity,
+    cloud,
+    uvIndex,
+    wind,
+    feelsLike,
+    condition,
+    icon,
+    name
+  ) {
     this.temperature = temperature;
     this.country = country;
     this.humidity = humidity;
