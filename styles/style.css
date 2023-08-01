@@ -1,0 +1,145 @@
+body {
+  margin: 0%;
+  color: whitesmoke;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body .container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .display {
+  margin-left: 8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .display .logo {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+body .display .logo p {
+  font-weight: 800;
+}
+body .display .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 9vh;
+}
+body .display .info .temperature {
+  font-size: 140px;
+  font-weight: 400;
+}
+body .display .info .loc-info, body .display .info .cond-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+body .display .info .loc-info .city, body .display .info .loc-info .time, body .display .info .loc-info .condition-text, body .display .info .cond-info .city, body .display .info .cond-info .time, body .display .info .cond-info .condition-text {
+  margin: 0;
+}
+body .display .info .loc-info .city, body .display .info .cond-info .city {
+  font-size: 60px;
+  font-weight: 400;
+}
+body .details {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  height: 100%;
+  padding-left: 4em;
+  overflow-y: scroll !important;
+}
+body .details .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+body .details .search .location-input {
+  min-width: 400px;
+  outline: none;
+  margin-top: 20px;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 1px solid #989faa;
+  padding-bottom: 10px;
+  color: whitesmoke;
+  font-size: 20px;
+  align-self: flex-end;
+}
+body .details .search .icon {
+  background-color: #f3ebe1;
+  padding: 30px;
+  margin: 0;
+}
+body .details .search .icon i {
+  color: black;
+  font-size: 40px;
+}
+body .details .search .icon:hover {
+  transition: 300ms;
+  background-color: transparent;
+}
+body .details .search .icon:hover i {
+  color: #989faa;
+}
+body .details .suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 25px 2.5em 0 0;
+}
+body .details .suggestions .line {
+  margin-bottom: 30px !important;
+}
+body .details .suggestions p, body .details .suggestions .line {
+  opacity: 0.5;
+}
+body .details .suggestions p:hover, body .details .suggestions p:focus {
+  transition: 200ms;
+  opacity: 1;
+  font-weight: 500;
+}
+body .details .line {
+  height: 1px;
+  background-color: whitesmoke;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+body .details .weather-details {
+  margin-right: 3em;
+}
+body .details .weather-details .title {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+}
+body .details .weather-details .line {
+  opacity: 0.5;
+}
+body .details .weather-details .weather-info {
+  color: whitesmoke;
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+html {
+  overflow-y: hidden;
+}/*# sourceMappingURL=style.css.map */
