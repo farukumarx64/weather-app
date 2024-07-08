@@ -77,7 +77,7 @@ export default function updateUI(weather) {
 
   // Change Background
   if (weather.getCondition().toString().toLowerCase().includes("sunny")) {
-    weatherBackground.setAttribute("src", `media/sunny_${random}.mp4`);
+    weatherBackground.setAttribute("src", `media/sunny_${random}.gif`);
     searchBtn.style.backgroundColor = "#f3ebe1";
     searchIcon.style.color = "black";
   } else if (
@@ -86,7 +86,7 @@ export default function updateUI(weather) {
     weather.getCondition().toString().toLowerCase().includes("mist") ||
     weather.getCondition().toString().toLowerCase().includes("fog")
   ) {
-    weatherBackground.setAttribute("src", `media/cloudy_${random}.mp4`);
+    weatherBackground.setAttribute("src", `media/cloudy_${random}.gif`);
     searchBtn.style.backgroundColor = "#acafbc";
     searchIcon.style.color = "black";
   } else if (
@@ -96,7 +96,7 @@ export default function updateUI(weather) {
     weather.getCondition().toString().toLowerCase().includes("thundery") ||
     weather.getCondition().toString().toLowerCase().includes("shower")
   ) {
-    weatherBackground.setAttribute("src", `media/rainy_${random}.mp4`);
+    weatherBackground.setAttribute("src", `media/rainy_${random}.gif`);
     searchBtn.style.backgroundColor = "#63839d";
     searchIcon.style.color = "black";
   } else if (
@@ -104,13 +104,13 @@ export default function updateUI(weather) {
     weather.getCondition().toString().toLowerCase().includes("blizzard") ||
     weather.getCondition().toString().toLowerCase().includes("ice")
   ) {
-    weatherBackground.setAttribute("src", `media/snowy_${random}.mp4`);
+    weatherBackground.setAttribute("src", `media/snowy_${random}.gif`);
     searchBtn.style.backgroundColor = "whitesmoke";
     searchIcon.style.color = "black";
   } else if (
     weather.getCondition().toString().toLowerCase().includes("clear")
   ) {
-    weatherBackground.setAttribute("src", `media/clear_${random}.mp4`);
+    weatherBackground.setAttribute("src", `media/clear_${random}.gif`);
     searchBtn.style.backgroundColor = "transparent";
     searchIcon.style.color = "#989faa";
   }
