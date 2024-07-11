@@ -10,7 +10,10 @@ export default class Weather {
     feelsLike,
     condition,
     icon,
-    name
+    name,
+    forecastToday,
+    forecastTomorrow,
+    forecastNext
   ) {
     this.temperature = temperature;
     this.country = country;
@@ -22,6 +25,9 @@ export default class Weather {
     this.condition = condition;
     this.icon = icon;
     this.name = name;
+    this.forecastToday = forecastToday;
+    this.forecastTomorrow = forecastTomorrow;
+    this.forecastNext = forecastNext;
   }
 
   // Getters
@@ -55,6 +61,15 @@ export default class Weather {
   getName() {
     return this.name;
   }
+  getForecastToday() {
+    return this.forecastToday;
+  }
+  getForecastTomorrow() {
+    return this.forecastTomorrow;
+  }
+  getForecastNext() {
+    return this.forecastNext;
+  }
 
   // Setters
   setTemperature(temperature) {
@@ -86,5 +101,14 @@ export default class Weather {
   }
   setName(name) {
     this.name = name;
+  }
+  setForecastToday(forecastToday) {
+    this.forecastToday = forecastToday;
+  }
+  setForecastTomorrow(forecastTomorrow) {
+    this.forecastTomorrow = forecastTomorrow;
+  }
+  setForecastNext(forecastNext) {
+    this.forecastNext = forecastNext;
   }
 }

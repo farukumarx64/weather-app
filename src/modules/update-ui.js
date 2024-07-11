@@ -36,6 +36,9 @@ export default function updateUI(weather) {
   let uvIndex = document.querySelector(".uv-index");
   let cloud = document.querySelector(".cloud");
   let country = document.querySelector(".country");
+  let forecastToday = document.querySelector(".today-forecast");
+  let forecastTomorrow = document.querySelector(".tomorrow-forecast");
+  let forecastNext = document.querySelector(".next-forecast");
   let time = document.querySelector(".time");
   let weatherBackground = document.querySelector(".weather-background");
   let searchBtn = document.querySelector(".icon");
@@ -56,6 +59,11 @@ export default function updateUI(weather) {
   country.textContent = `${weather.getCountry()}`;
   cloud.textContent = `${weather.getCloud()}%`;
   humidity.textContent = `${weather.getHumidity()}%`;
+
+  // Forecast Details
+  forecastToday.textContent = `${weather.getForecastToday()}°C`;
+  forecastTomorrow.textContent = `${weather.getForecastTomorrow()}°C`;
+  forecastNext.textContent = `${weather.getForecastNext()}°C`;
 
   // Extra Info
   feelsLike.textContent = `${weather.getFeelsLike()}°C`;
